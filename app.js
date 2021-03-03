@@ -28,10 +28,7 @@ app.use("/users", usersRoutes);
 app.use("/breweries", breweriesRoutes);
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://beerana-front.surge.sh');
-  next();
-});
+
 
 
 
