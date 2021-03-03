@@ -29,7 +29,7 @@ app.use("/breweries", breweriesRoutes);
 
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'beerana-front.surge.sh');
+  res.header('Access-Control-Allow-Origin', 'http://beerana-front.surge.sh');
   next();
 });
 
