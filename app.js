@@ -28,6 +28,12 @@ app.use("/users", usersRoutes);
 app.use("/breweries", breweriesRoutes);
 
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'beerana-front.surge.sh');
+  next();
+});
+
+
 
 /** Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
